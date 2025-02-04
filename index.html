@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css'>
+    <link rel="icon" href="assets/assets/wlogo3.jpg" type="image/x-icon">
+    <title>FortisSuplementos</title>
+</head>
+<body>
+    <div class="bfheader">
+        <button class="menu"></button>
+        <div class="logo"></div>
+        <button class="accounts" id="accounts"></button>
+    </div>
+    
+    <div class="accounts_emergent" id="accounts_emergent">
+        <div class="accounts_emergent-content">
+            <span class="close-btn">&times;</span>
+            <h2>Lo sentimos</h2>
+            <img src="assets/assets/fueradeservicio.png" loading="lazy">
+            <p>Estamos solucionando esto,<br>
+             por favor intente mas tarde</p>
+        </div>
+    </div>
+
+        <div class="header">
+            <div class="navbar" id="navbarbox"> 
+                <button class="navbtn" id="homebtn">Inicio</button>
+                <button class="navbtn" id="buybtn">Tienda</button>
+            </div>
+        </div>
+
+
+    <section class="welcome">
+        <h1>Transformando vidas</h1>
+        <h2>Bienvenidos a Fortiss</h2>
+    </section>
+
+    <section class="hero">
+        <h1>Mas Vendidos</h1>
+        <div class="bestsellers">
+            <div class="container" data-id="1" data-name="Nutricost Creatina Monohidratada" data-price="38 US" data-image="assets/creatines/IMG_5627.webp">
+                <img src='assets/creatines/IMG_5627.webp' alt='img' class="imagen">
+                <div class="texto">
+                    Creatina Monohidratada Nutricost <br>
+                    100 servicios <br>
+                    5 gramos de creatina pura por servicio
+                </div>
+                <button onclick="seeProduct()" class="addToCart">Ver</button>
+                <h3 class="price">38$</h3>
+            </div>
+
+            <div class="container" data-id="5" data-name="Optimun Nutrition Whey Protein" data-price="45 US" data-image="assets/proteins/Optimun Nutrition Whey Protein.webp">
+                <img src='assets/proteins/Optimun Nutrition Whey Protein.webp' alt='img' class="imagen">
+                <div class="texto">
+                    Lega la reina de las proteinas <br>
+                    Optimun Nutrition Whey Protein <br>
+                    29 servicios <br>
+                </div>
+                <button onclick="seeProduct()" class="addToCart">Ver</button>
+                <h3 class="price">45$</h3>
+            </div>
+        </div>
+
+        <!-- Parte de las categorias (por ahora offline)
+        <h1 class="h1-categories">Compre por categorias</h1>
+        <div class="category-div">
+            <div class="category" onclick="training()">
+                <div class="cat-img"></div>
+
+                <div class="cat-under">
+                    <h3>Entrenamiento</h3>
+                </div>
+            </div>
+
+            <div class="category" onclick="equipment()">
+                <div class="cat-img3"></div>
+
+                <div class="cat-under">
+                    <h3>Equipamiento</h3>
+                </div>
+            </div>
+        </div>-->
+    </section>
+
+    <div class="aboutbkg">
+        <div class="about" id="about">
+            <h1>Sobre nosotros</h1>
+            <p>En Fortiss, nos dedicamos a la distribucion y venta de suplmentos
+                de alta calidad. Fundados en 2020, nuestra mision ha sido siempre
+                el bienestar del cliente y las relaciones calidad-precio.
+            </p>
+            <h3>Mision</h3>
+            <p>Ofrecer los suplementos alimenticios y deportivos que cumplan con los 
+                mas altos estandares de calidad, proporcionando a nuestros clientes 
+                productos efectivos, seguros y confiables. Nos comprometemos a trabajar
+                con honestidad y transparencia en todo lo que hacemos.
+            </p>
+            <h3>Vision</h3>
+            <p>Convertirnos en una empresa reconocida en Cuba por la calidad de el 
+                trabajo y el servicio al cliente. Buscamos impactar positivamente
+                en la vida de las personas y la sociedad ofreciendoles soluciones
+                nutricionales que apoyen su bienestar general.
+            </p>
+        </div>
+    </div>
+
+
+    <section class="testimonials" id="testimonials">
+        <!--hacer como las tarjetas de la pag anterior-->
+    </section>
+
+    <div class="logindiv">
+        <div class="login">
+            <form action="https://formspree.io/f/manqyneo" method="POST">
+                <h1>Contactenos</h1>
+                <label>Nombre</label>
+                <input type="text">
+                <label>Email</label>
+                <input type="email" name="email">
+                <label>Mensaje</label>
+                <textarea name="message"></textarea>
+                <button>Submit</button>        
+            </form>
+        </div>
+    </div>
+
+    <script src="script/scroll.js"></script>
+    <script src="script/modal_all.js"></script>
+    <script src="script/nav_btnFuct.js"></script>
+    <script src="script/buy_all.js"></script>
+
+    <footer>
+
+        <div class="footer">
+            <div class="subfoot">
+                Siganos en nuestras redes sociales
+                <div class="footer-media">
+                    <a href="https://chat.whatsapp.com/GWEng5TTysj9UDxDjUNDmT"><img src='assets/assets/whatsapp.png' alt='whatsapp'></a>
+                    <a href="https://www.instagram.com/fortiss.suplementos?igsh=MXB6a253OWt3bWMyZg=="><img src='assets/assets/instagram.jpg' alt='instagram'></a>
+                    <a href="https://www.github.com"><img src='assets/assets/github.png' alt='github'></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
